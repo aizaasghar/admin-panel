@@ -18,9 +18,9 @@ export default function App() {
     };
 
     const formData = new FormData();
-    formData.append("product", JSON.stringify(productData)); // ✅ Required by backend
+    formData.append("product", JSON.stringify(productData)); 
     if (image) {
-      formData.append("image", image); // ✅ Multer will handle this
+      formData.append("image", image); 
     }
 
     try {
